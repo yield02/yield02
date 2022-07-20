@@ -1,5 +1,12 @@
-import { attach } from "./store.js";
-import App from "./component/App.js";
+import html from './core.js'
 
+const cars = ['BMW', 'Porsche']
 
-attach(App, document.getElementById('root'));
+const output = html`
+    <h1></h1>
+    <ul>
+        ${cars.map(car => `<li>${car}</li>`)}
+    </ul>
+
+`
+console.log(output)
