@@ -1,18 +1,23 @@
+import storage from "./util/storage.js";
+
+
 const init = {
-    todos: ['BMW', 'Porsche', 'Mercedes']
+    todos: storage.get()
+}
+
+
+const actions = {
+    add( { todos }, title) {
+        // console.log({title, completed: false});
+        todos.push({title, completed: false});
+        storage.set(todos)
+    }
 }
 
 
 
 
-
-
-
-
-
 export default function reducer(state = init, action, args) {
-    switch(action) {
-        default:
-            return state;
-    }
+    actions[action] && actions[action](state, ...args);
+    return state;
 }

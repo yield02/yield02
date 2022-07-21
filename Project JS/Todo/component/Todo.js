@@ -10,9 +10,8 @@ function Todo( {todos} ){
 		<input id="toggle-all" class="toggle-all" type="checkbox">
 		<label for="toggle-all">Mark all as complete</label>
 		<ul class="todo-list">
-		
-        ${todos.map(todo => TodoItem({todo}))}
-        
+        ${todos && todos.map(todo => TodoItem({todo}))}
+
 		</ul>
 	</section>
     `
