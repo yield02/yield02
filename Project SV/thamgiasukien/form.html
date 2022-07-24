@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div id="event_container">
+      <img src="./img/bg-2.png" alt="" class="bg-image"> 
+      
+      <div class="header">
+         <img src="./img/top.png" alt="">
+         <div class="header_text">SETTING EVENT</div>
+      </div>
+      
+      <div class="typeEvent_container row">
+         <div class="col-3 type-items active" id="dm"> 
+            <img src="./img/DM.png" alt="" class="">          
+         </div>
+         <div class="col-3 type-items" id="dmg">
+            <img src="./img/TDM.png" alt="" class="">          
+         </div>
+         <div class="col-3 type-items" id="zoombie">
+            <img src="./img//ZOM.png" alt="" class="">          
+         </div>
+      </div>
+
+      <div class="input_container row">
+         <div class="col-3 input_box">
+            <label for="" class="input_label">HEAL POINT <img src="img/hp.png" class="input-img"> </label>
+            <input type="number" class="input" id="heal">
+         </div>
+
+         <div class="col-3 input_box">
+            <label for="" class="input_label">ARMOR<img src="img/def.png" class="input-img"> </label>
+            <input type="number" class="input" id="armor">
+         </div>
+
+         <div class="col-3 input_box">
+            <label for="" class="input_label">ITEMS<img src="img/item.png" class="input-img"> </label>
+            <input type="text" class="input" id="items">
+         </div>
+
+         <div class="col-3 input_box">
+            <label for="" class="input_label">WEAPONS<img src="img/wespon.png" class="input-img"> </label>
+            <input type="text" class="input" id="weapons">
+         </div>
+
+         <div class="col-3 input_box">
+            <label for="" class="input_label">AMMO<img src="img/ammo.png" class="input-img"> </label>
+            <input type="number" class="input" id="ammo">
+         </div>
+
+      </div>
+
+      <div class="btn_container">
+         <button id="submit-btn" onclick="submit()" >SAVE</button>
+         <p class="toast-mess"></p>
+      </div>
+
+   </div>
+   <script src="./script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

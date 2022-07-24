@@ -8,7 +8,7 @@ function App({todos}){
     <section class="todoapp">
     ${Header()}
     ${todos && todos.length > 0 && Todo()}
-    ${Footer()}
+    ${todos && todos.length > 0 && Footer()}
     </section>
     `
 }

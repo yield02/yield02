@@ -3,14 +3,20 @@ import { connect } from '../store.js'
 import TodoItem from './TodoItem.js'
 
 
-function Todo( {todos} ){
-    // console.log(todos)
+function Todo( {todos, filters} ){
+    
     return html `
     <section class="main">
-		<input id="toggle-all" class="toggle-all" type="checkbox">
+		<input id="toggle-all" class="toggle-all" type="checkbox" onchange="dispatch('toggleAll', this.checked)"
+        ${todos.every(filters.completed) && 'checked'}
+
+        >
 		<label for="toggle-all">Mark all as complete</label>
 		<ul class="todo-list">
-        ${todos && todos.map(todo => TodoItem({todo}))}
+
+
+        ${todos && todos.map((todo, index) => TodoItem({todo, index}))}
+
 
 		</ul>
 	</section>

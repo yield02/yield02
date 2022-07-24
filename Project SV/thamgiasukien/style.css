@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#event_container {
+    position: relative;
+    width: 1109px;
+    height: 743px;
+    /* padding: 50px 0; */
+}
+
+
+.header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-52%);
+    top: -3vh;
+}
+
+
+.header_text {
+    
+    color: rgb(255,204,8);
+    text-shadow: 2px 0 rgb(85,36,102), -2px 0 rgb(85,36,102), 0 2px rgb(85,36,102), 0 -2px rgb(85,36,102),
+             1px 1px rgb(85,36,102), -1px -1px rgb(85,36,102), 1px -1px rgb(85,36,102), -1px 1px rgb(85,36,102);
+    letter-spacing: 8px;
+    font-weight: 900;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    font-size: 42px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.bg-image {
+    position: absolute;
+    z-index: -1;
+}
+
+.typeEvent_container {
+    /* z-index: 3; */
+    /* padding: 0px 160px; */
+    margin: 150px 160px 0 160px;
+    justify-content: center;
+}
+.type-items {
+    display: flex;
+    justify-content: center;
+    margin: 0 28px;
+    opacity: 0.5;
+    transition: 0.2s all;
+}
+
+.type-items.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.input_container {
+    margin: 58px 160px 0px 160px;
+    justify-content: center;
+    height: 255px;
+}
+
+.input_box {
+    margin: 0 18px;
+}
+
+.input_label {
+    font-size: 18px;
+    width: 100%;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+}
+
+.input-img {
+    margin-left: 5px;
+}
+
+.input {
+    height: 48px;
+    outline: none;
+    border: none;
+    padding: 0 4px;
+}
+
+.btn_container {
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+#submit-btn {
+    display: inline-block;
+    font-size: 32px;
+    background-color: rgb(85,36,102);
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 4px;
+    padding: 4px 64px;
+    border-radius: 30px;
+    border: 1px solid rgb(255,204,8);
+    transition: 0.2s all;
+    opacity: 0.9;
+}
+
+#submit-btn:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.toast-mess {
+    color: red;
+    text-align: center;
+    width: 100%;
+    z-index: 3;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 8px;
+}
+

@@ -26,7 +26,6 @@ export function createStore(reducer){
         },
         dispatch(action, ...args){
             state = reducer(state, action, args);
-            console.log(1);
             render();
         }
     }
