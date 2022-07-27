@@ -3,7 +3,7 @@ import { connect } from '../store.js'
 import TodoItem from './TodoItem.js'
 
 
-function Todo( {todos, filters} ){
+function Todo( {todos, filters, filter} ){
     
     return html `
     <section class="main">
@@ -13,9 +13,9 @@ function Todo( {todos, filters} ){
         >
 		<label for="toggle-all">Mark all as complete</label>
 		<ul class="todo-list">
+        
 
-
-        ${todos && todos.map((todo, index) => TodoItem({todo, index}))}
+        ${todos && todos.filter(filters[filter]).map((todo, index) => TodoItem({todo, index}))}
 
 
 		</ul>

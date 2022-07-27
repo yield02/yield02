@@ -40,7 +40,7 @@ function submit() {
         listInput.forEach(item => {
             output[item.id] = item.value;
         })
-
+ 
         return {
             type: $('.type-items.active').id,
             ...output
