@@ -316,39 +316,55 @@
 
 
     function PostItem(props) {
-        console.log(props.user);
-        return (
-            <div className = "post-item">
-                <h1 className="post-title">{props.title}</h1>
-                <p className="post-desc"> { props.desc} </p>
-                <span className="User-name"> UserName: { props.user.username} </span>
+      let Component = 'button';
+      console.log(Component);
+      let object = {}
+      if(props.href) {
+        Component = 'a'
+        object.href = props.href;
+      }
+      if(props.onClick) {
+        object.onClick = props.onClick
+      }
 
-                </div>
-                )
-            }
+
+
+
+      return (
+        <Component {...object}>{props.title}</Component>
+      )
+    }
             
+    function handdleOnclick() {
+      console.log(1);
+    }
 
 
+    function List({data, children}) {
+      console.log(data);
+      return (
+        <ul>
+
+          {data.map(children)}
+        
+        </ul>
+      )
+    }
+
+
+    let car = ['mercedes', 'chavolet', 'ranrer']
     
     function App() {
         return (
-            courses.map(course => {
-                // console.log(course.user)
-                console.log(course.description)
-                return <PostItem 
-                        title = {course.title}
-                        desc = {course.description}
-                        user = {course.user}
-                        />
-            })
-
+            <List
+              data = {car}
+            >
+              {(item) => <li>{item}</li>}
+            </List>
         )
     }       
-    
-    const html = App();
-    console.log(html)
 
-    ReactDOM.render(html, document.getElementById("root"));
+    ReactDOM.render(<App />, document.getElementById("root"));
     </script>
   </body>
 </html>
