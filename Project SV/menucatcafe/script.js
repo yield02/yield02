@@ -148,12 +148,12 @@ function haddleClick(event) {
     }
 
 
-
-
-    declineBtn.onclick = function() {
+    function hiddenAcceptBox() {
         main.removeChild(accept_box);
         console.log(1);
     }
+
+    declineBtn.onclick = hiddenAcceptBox
 
 
 

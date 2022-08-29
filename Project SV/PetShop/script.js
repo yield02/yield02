@@ -1,76 +1,15 @@
-
+import {listType} from './config.js'
+import  handdleOnclick  from './handdle.js'
 const $$ = document.querySelectorAll.bind(document);
 const $ = document.querySelector.bind(document)
+window.$ = $;
+window.$$ = $$;
+var main = $('#main');
 
 // console.log(1)
-
 var main_selector = $('#main__body');
 
-var listType = {
-    Sushi: [
-        {
-            name: 'Sushi',
-            cost: '$9.99',
-            img: './img/items.PNG'
-        },
-        {
-            name: 'Sushi2',
-            cost: '$9.99',
-            img: './img/items.PNG'
-        },
-        {
-            name: 'Sushi3',
-            cost: '$9.99',
-            img: './img/items.PNG'
-        },
-        {
-            name: 'Sushi4',
-            cost: '$9.99',
-            img: './img/items.PNG'
-        },
-        {
-            name: 'Sushi5',
-            cost: '$9.99',
-            img: './img/items.PNG'
-        },
-        {
-            name: 'Sushi6',
-            cost: '$9.99',
-            img: './img/items.PNG'
-        },
-    ],
-    Hotpot: [
-        {
-            name: 'Thai HotPot',
-            cost: '$9.99',
-            img: './img/items.PNG'
-        },
-        {
-            name: 'Thai HotPot',
-            cost: '$9.99',
-            img: './img/items.PNG'
-        },
-        {
-            name: 'Thai HotPot',
-            cost: '$9.99',
-            img: './img/items.PNG'
-        },
-        {
-            name: 'Thai HotPot',
-            cost: '$9.99',
-            img: './img/items.PNG'
-        },
-        {
-            name: 'Thai HotPot',
-            cost: '$9.99',
-            img: './img/items.PNG'
-        }
-    ]
-}
-
-
-
-
+window.handdleOnclick = handdleOnclick;
 function rander(listType) {
     var main_html = `
         
@@ -89,7 +28,7 @@ function rander(listType) {
         values.forEach((value, index) => {
             html += 
             `
-                <div class="col-3 item" data="${key}-${index}" onclick ="haddleClick(event)">
+                <div class="col-3 item" data="${key}-${index}" onclick ="handdleOnclick(event)">
                      <img src="${value.img}" alt="" class="items-image">
                      <h5 class="item-name">${value.name}</h5>
                      <span class="item-cost">${value.cost}</span>
@@ -110,55 +49,23 @@ function rander(listType) {
 
 }
 
-
-
-function haddleClick(event) {
-    var item;
-    if(event.target.classList.contains('item')) {
-        item = event.target
-    }
-    else {
-        item = event.target.parentElement;
-    }
-    var main = $('#main');
-    var accept_box = document.createElement('div');
-    accept_box.classList.add('accept-box');
-    accept_box.innerHTML = 
-    `
-    <p>Bạn có đồng ý mua ${item.querySelector('.item-name').textContent}</p>
-    <button type="button" class="btn btn-primary" id="accept">Đồng Ý</button>
-    <button type="button" class="btn btn-danger" id="decline">Hủy</button>
-    `
-    main.appendChild(accept_box);
-
-    var acceptBtn = $("#accept");
-    var declineBtn = $("#decline");
-
-    //Thao Tác Accept nè
-    acceptBtn.onclick = function() {
-        const cost = item.querySelector('.item-cost').textContent.slice(1);
-        //cost là giá vật phẩm
-        console.log(cost)
-
-
-
-
-
+function HanddleremoveChild() {
+    const accept_box = $('.accept-box');
+    // console.log(accept_box);
+    if(accept_box)
         main.removeChild(accept_box);
-    }
-
-
-
-
-    declineBtn.onclick = function() {
-        main.removeChild(accept_box);
-        console.log(1);
-    }
-
-
-
 
 }
+
+window.HanddleremoveChild = HanddleremoveChild;
+
+
+
+const handdleRemoveChild = () => {
+    $('body').setAttribute('onkeyup',   "event.keyCode === 27 && HanddleremoveChild()")
+    
+}
+
 
 
 
@@ -168,7 +75,7 @@ function haddleClick(event) {
 
 function start() {
     rander(listType);
-    // setTimeout(haddleClick, 1000);
+    handdleRemoveChild()
 }
 
 start();
