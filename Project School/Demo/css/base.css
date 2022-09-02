@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #E62467;
+}
+
+
+
+#Header {
+    position: relative;
+    display: flex;
+    height: 140px;
+    background: url(../image/headerbackground.jpg) no-repeat 50% 50%;
+    margin-bottom: 4px;
+    border-end-end-radius: 4px;
+    border-end-start-radius: 4px;
+    box-shadow: 0 0 5px 1px #000;
+
+}
+
+#header-icon {
+    position: absolute;
+    width: 80px;
+    top: 10px;
+    left: 10px;
+    transform: rotate(30deg);
+}
+
+.header_container {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 24px 10px 24px;
+}
+
+.header_navlist {
+}
+
+.header_navlist li {
+    display: inline-block;
+    background-color: #F6F7F7;
+    border: 2px solid #d3d3d3;
+    padding: 4px 8px;
+    list-style-type: none;
+    border-radius: 4px;
+}
+
+.header_navlist li:hover {
+    background-color: rgb(230, 36, 103, 1);
+}
+.header_navlist li:hover a {
+    color: #ffff;
+}
+
+
+.header_navlist li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.header_find {
+    display: inline-flex;
+}
+
+.header_find {
+
+}
+
+.find_icons {
+    background-color: #CDDC2D;
+    padding: 4px;
+    margin-left: 8px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.find_icons:hover {
+    opacity: 0.9;
+}
+
+.header_find-icons {
+    color: white;
+}
+
+.header_cart-icons {
+    color: red;
+}
+
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    margin-top: 4px;
+    border-start-end-radius: 4px;
+    border-start-start-radius: 4px;
+    box-shadow: 0 0 3px 1px #000;
+}
+
+#footer .footer-icons {
+    color: var(--primary-color);
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+#footer .footer-icons:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+main {
+    box-shadow: 0 0 1px #000;
+
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+
+.content-header-text {
+    width: 100%;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 12px;
+}
