@@ -11,6 +11,7 @@ function Navbarindex() {
       <li><a href="#concent">[Concent]</a></li>
       <li><a href="#footer">[Footer]</a></li>
       <li><a href="./trangchu.html">[Trang Chủ]</a></li>
+      <li><a href="./dangnhap.html">[Đăng Nhập]</a></li>
     </ul>
   `;
 }

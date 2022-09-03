@@ -17,7 +17,7 @@ function Main() {
                     <div class="input_box"><i class="fa-solid fa-key input_icons"></i><input type="password" class="login_input" placeholder="Nhập mật khẩu"></div>
             </div>
             <p>Bạn quên <a href="#">Mật khẩu?</a></p>
-            <p><input type="checkbox"> Ghi nhớ mật khẩu cho lần sau</p>
+            <p><input type="checkbox"> Ghi nhớ đăng nhập cho lần sau</p>
             <div class="submit_box">
                 <button>Đăng Nhập</button>
                 <button>Hủy</button>
