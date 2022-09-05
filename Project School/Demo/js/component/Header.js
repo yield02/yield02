@@ -6,7 +6,7 @@ function Header() {
         
    
         <div class="header_container">
-            <img src="./image/header-icons.png" alt="" id="header-icon">
+            <img src="./image/logo.png" alt="" id="header-logo">
             <nav id = "header_navbar">
                 <ul class="header_navlist">
                     <li><a href="../../trangchu.html">Trang chủ</a></li>

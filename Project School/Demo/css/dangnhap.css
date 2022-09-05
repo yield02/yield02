@@ -10,13 +10,16 @@ main {
     padding: 32px;
 }
 
+.wrapper {
+    min-width: 600px
+}
+
 .content-header-text {
 
 }
 
 .login-icon {
-    font-size: 150px;
-    color: var(--primary-color);
+    width: 300px;
     margin: 32px 0;
 }
 
@@ -38,4 +41,9 @@ main {
 
 .login_input {
     padding: 3px 20px 3px 8px;
+}
+
+#login_checkbox {
+    margin: 0 8px;
+    accent-color: blue;
 }

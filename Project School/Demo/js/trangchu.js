@@ -16,8 +16,8 @@ function body() {
                 <h1 class="content-header-text">SẢN PHẨM MỚI</h1>
                 <h3 class="header-text">Sửa chua tốt cho sức khỏe</h4>
                 <div class="new-product-content">
-                    <img src="./image/creamimg.jpg" class="new-product-img"alt="">
-                    <p>Sửa chua là một loại thực phẩm được tạo ra từ quá trình lên men sữa của các vi khuẩn. Hầu hết các loại sữa đều có thể dùng làm sửa chua. Tuy nhiên sữa bò là được dùng nhiều hơn hết. Sữa chua hay được gọi là yaurt ( là da-ua). Chúng được lên men từ sữa động vật nhờ vi khuẩn lactic, đã được khử chất béo và thanh trùng ở nhiệt độ 80 - 90 độ C. Sữa chua có 2 loại cơ bản là sữa chua có đường và sữa chua không đường. bên cạnh đó còn có loại sữa chua uống, sữa chua men sống. Váng sữa thường được chia làm 3 loại dựa vào hàm lượng chất béo có trong sna3 phẩm: sữa có hàm lượng chất béo cao nhất ( 35 - 50%) chất béo), váng sữa thông thường (10-30% chất béo), váng sữa nguyên kem (6-15% chất béo). 
+                    <img src="./image/trangchu/yogurt.jpg" class="new-product-img"alt="">
+                    <p>Sữa chua là một loại thực phẩm được tạo ra từ quá trình lên men sữa của các vi khuẩn. Hầu hết các loại sữa đều có thể dùng làm sữa chua, tuy nhiên sữa bò là được dùng nhiều hơn hết. Sữa chua hay được gọi là yaourt (là da-ua). Chúng được lên men từ sữa động vật nhờ vi khuẩn lactic, đã được khử chất béo và thanh trùng ở nhiệt độ 80 - 90 độ C.Sữa chua có 2 loại cơ bản là sữa chua có đường và sữa chua không đường. Bên cạnh đó còn có loại sữa chua uống, sữa chua men sống. Váng sữa thường được chia làm 3 loại dựa vào hàm lượng chất béo có trong sản phẩm: váng sữa có hàm lượng chất béo cao nhất (35-50% chất béo), váng sữa thông thường (10-30% chất béo), váng sữa nguyên kem (6-15% chất béo).
                         <a href="#">Xem chi tiết</a>
                     </p>
                 </div>
@@ -27,11 +27,12 @@ function body() {
                 <h1 class="content-header-text">GÓC THÀNH VIÊN</h1>
                 <h3 class="header-text">Sửa chua làm tại nhà</h4>
                 <div class="member-content">
-                    <p> Học làm sữa chua tại gia cùng chuyên gia. Trong thực đơn dinh dưỡng của các bà mẹ cho con trẻ và các thành viên trong gia đình đều không thể thiếu món sữa chua thơm ngon, hấp dẫn và cực kỳ tốt cho sức khỏe này. Tuy nhiên, đa phần đều chọn mua sữa chua công nghiệp đã được đóng hộp bán sẵn tại các siêu thị và cửa hàng hơn là sữa chua tự làm tại nha. Như vậy, liệu sữa chua nhà làm và sữa chua công nghiệp thì loại nào tốt cho sức khỏe của chúng ta hơn?? Nếu tla2 một người yêu thích nấu ăn bạn sẽ chọn sữa chua nhà làm hay mua sữa chua công nghiệp bên ngoài. Sữa chua nhà làm đảm bảo về độ an toàn, chất lượng cũng như giá thành rẻ 
+                    <p> Học làm sữa chua tại gia cùng chuyên gia.Trong thực đơn dinh dưỡng 
+                        của các bà mẹ cho con trẻ và các thành viên trong gia đình đều không thể thiếu món sữa chua thơm ngon, hấp dẫn và cực kì tốt cho sức khỏe này. Tuy nhiên, đa phần đều chọn mua sữa chua công nghiệp đã được đóng hộp bán sẵn tại các siêu thị và cửa hàng hơn là sữa chua tự làm tại nhà. Như vậy, liệu sữa chua nhà làm và sữa chua công nghiệp thì loại nào tốt sức khỏe của chúng ta hơn? Nếu là một người yêu thích nấu ăn bạn sẽ chọn sữa nhà làm hay mua sữa chua công nghiệp bên ngoài. Sữa chua nhà làm đảm bảo về độ an toàn, chất lượng cũng như giá thành rẻ.
                         <a href="#">Xem chi tiết</a>
                     </p>
                     <!-- <img src="./image/creamimg.jpg" class="new-product-img"alt=""> -->
-                    <video src="youtu.be/jfKfPfyJRdk" controls="true" id="member-video"></video>
+                    <video src="./image/trangchu/yogurt.mp4" controls="true" id="member-video"></video>
                 </div>
             </div>
 
@@ -63,16 +64,20 @@ function body() {
                 
                     <div class="contact-list">
                         <div class="contact-items">
-                            <img src="./image/contact1.PNG" alt="">
+                            <img src="./image/trangchu/order_1.png" class="contact-img"  alt="">
+                            <h5 class="contact-title">Gọi Điện</h5>
                         </div>
                         <div class="contact-items">
-                            <img src="./image/contact2.PNG" alt="">
+                            <img src="./image/trangchu/order_2.png" class="contact-img"  alt="">
+                            <h5 class="contact-title">Đặt Hàng</h5>
                         </div>
                         <div class="contact-items">
-                            <img src="./image/contact3.PNG" alt="">
+                            <img src="./image/trangchu/order_3.png" class="contact-img"  alt="">
+                            <h5 class="contact-title">Nhận Hàng</h5>
                         </div>
                         <div class="contact-items">
-                            <img src="./image/contact4.PNG" alt="">
+                            <img src="./image/trangchu/order_4.png" class="contact-img"  alt="">
+                            <h5 class="contact-title">Thanh Toán</h5>
                         </div>
                     </div>
             </div>
@@ -80,6 +85,7 @@ function body() {
         </div>
     
     </main>
+    
     
     `
 }

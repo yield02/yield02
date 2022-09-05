@@ -4,7 +4,7 @@
 
 #sliders {
     height: 300px;
-    background: url(../image/headerbackground.jpg) center center;
+    background: url(../image/trangchu/bg-home.jpg) center center;
     /* padding-top: 50%; */
 }
 
@@ -37,20 +37,21 @@
 
 #member-video {
     margin-left: 12px;
+    width: 250px;
 }
 
 .guide_container {
     display: flex;
 }
 .guide_container div {
-    padding: 0 24px;
     width: 45%;
 }
 .guide-header {
     color: var(--primary-color);
+    margin-bottom: 12px;
 }
 .guide-list {
-    padding: 0 15px;
+    padding: 0 40px;
     display: block;
 
 }
@@ -69,6 +70,8 @@
     display: flex;
     align-items: center;
     justify-content:center;
+    flex-direction: column;
+    border-radius: 4px;
     width: 23%;
     height: 200px;
     box-shadow: 0 0 4px var(--primary-color);
@@ -87,4 +90,14 @@
 
 .contact-items + .contact-items{
     margin-left: 10px;
+}
+
+.contact-img {
+    margin-bottom: 24px;
+    width: 80px;
+}
+
+.contact-title {
+    font-weight: 500;
+    font-size: 16px;
 }
