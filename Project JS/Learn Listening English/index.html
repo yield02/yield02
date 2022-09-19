@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Listening English</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/index.css">
+  </head>
+  <body>
+    <h4>Push File Audio</h4>
+    <input type="file" id="audio" name="uploadAudio" accept="audio/*"/>
+    <script src="./js/index.js"></script>
+    <div class="Listeningbox">
+        <div class="TimeBox">
+
+            <label for="">Thời Gian dừng</label>
+            <input type="number" id="timeStop" value="5">
+            <label for="">Thời Gian Nghỉ</label>
+            <input type="number" id="timewait" value="5">
+
+        </div>
+        <h5 id="title"></h5>
+        <audio id="showAudio" ></audio>
+        <div class="proces_container">
+          <span id="currentTime">0:00</span>
+          <input type="range" id="processbar" value="0">
+          <span id="endTime">0:00</span>
+        </div>
+    </div>
+    <div class="control_container">
+      <button class="control-btn" id="control-left"><i class="fa-solid fa-chevron-left"></i></button>
+      <!-- <button class="control-btn" id="control-pause"><i class="fa-solid fa-pause"></i></button> -->
+      <button class="control-btn" id="control-play"><i class="fa-solid fa-play"></i></button>
+      <button class="control-btn" id="control-right"><i class="fa-solid fa-angle-right"></i></button>
+      <button class="control-btn" id="control-repeat"><i class="fa-solid fa-repeat"></i></button>
+    </div>
+</body>
+</html>
