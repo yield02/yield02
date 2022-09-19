@@ -12,7 +12,7 @@ setTimeout(function () {
   const leftBtn = $('#control-left')
   var timeOutActive = true;
 
-  const playTimeOut = function (deplay) {
+  var playTimeOut = function (deplay) {
     return setTimeout(function () {
       showAudio.pause();
     }, deplay);
@@ -35,31 +35,39 @@ setTimeout(function () {
     };
     
     setTimeout(() => {
-        endTime.innerHTML = timeFormat(showAudio.duration);
-    }, 500);
+      console.log(showAudio.duration);
+      endTime.innerHTML = timeFormat(showAudio.duration);
+    }, 1000);
 
   };
 
 
   const handlePlayBtn = function () {
     if (showAudio.paused) {
+      timeOutActive = true;
       handlePlay();
       showAudio.play();
-      timeOutActive = true;
     } else {
+      timeOutActive = false;
       handlePause();
       showAudio.pause();
-      timeOutActive = false;
       clearTimeout(pauseTimeOut);
       clearTimeout(playTimeOut);
     }
   };
 
   const handleRepeatBtn = function () {
+
     repeatBtn.classList.toggle("active");
-    if(!showAudio.paused) {
+    if(!showAudio.paused && repeatBtn.classList.contains("active")) {
+        showAudio.pause();
+        clearTimeout(pauseTimeOut);
+        showAudio.play();
+    }
+    else {
         showAudio.pause();
         showAudio.play();
+        clearTimeout(playTimeOut);
     }
   };
 
@@ -94,6 +102,7 @@ setTimeout(function () {
 }
 
   const audioOnPause = function () {
+
     let timeStop = $("#timeStop").value * 1000;
     handlePause();
     timeOutActive && handleRepeat(timeStop);
@@ -102,9 +111,7 @@ setTimeout(function () {
 
   const audioOnPlay = function () {
     let timeWait = $("#timewait").value * 1000;
-    
-    console.log('Play');
-    
+  
     
     handlePlay();
     timeOutActive && handleRepeat(timeWait);
