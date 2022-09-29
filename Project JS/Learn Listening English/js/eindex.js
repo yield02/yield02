@@ -1,4 +1,4 @@
-setTimeout(function () {
+
   const $ = document.querySelector.bind(document);
   const $$ = document.querySelectorAll.bind(document);
 
@@ -161,4 +161,3 @@ setTimeout(function () {
 
   $("#audio").onchange = handleOnChangeAudio;
 
-}, 2000);
