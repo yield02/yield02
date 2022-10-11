@@ -581,7 +581,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:CustomPictureType>4</a:CustomPictureType>
 <a:CustomTextMode>1</a:CustomTextMode>
-<a:CustomPictureID>1A8030BF-B4B6-4B54-B215-B711E1BD5DCD</a:CustomPictureID>
+<a:CustomPictureID>EB685C60-E645-4137-BC75-A017D0464516</a:CustomPictureID>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <a:KeepAspect>1</a:KeepAspect>
 <c:Object>
@@ -601,7 +601,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:Code>BAITOANUNGDUNG</a:Code>
 <a:CreationDate>1665028559</a:CreationDate>
 <a:Creator>pemap</a:Creator>
-<a:ModificationDate>1665029984</a:ModificationDate>
+<a:ModificationDate>1665040750</a:ModificationDate>
 <a:Modifier>pemap</a:Modifier>
 <a:Location>file:///%[PRJ_ROOT_DIR]%/BaiToanUngDung.cdm</a:Location>
 <a:Extension>cdm</a:Extension>

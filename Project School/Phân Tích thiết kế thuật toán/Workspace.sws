@@ -6,12 +6,15 @@
 	<Local Expanded="Yes">
 		<Model ID="{8C36F76F-C1F5-4F67-B20E-550C7F977475}" Loaded="No" Name="Bài 2" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="Bai 1.cdm"/>
 		<Model Expanded="Yes" ID="{F5694D3B-07C6-418A-A4AC-0D2A39A77EC9}" Name="Bài 3" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="Bài 3.cdm"/>
-		<Model Expanded="Yes" ID="{6786C54F-94E4-4E06-8CD7-BDEAD815F526}" Name="QL_VAYVON_CB" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="file:///C|/Users/pemap/Documents/Zalo Received Files/QLVAYVON_final.cdm"/>
-		<Model Expanded="Yes" ID="{ACF7EB81-0E4D-4825-9E41-08ACF489EC9F}" Name="QL_KHHT" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="file:///C|/Users/pemap/Documents/Zalo Received Files/QLKHHT_Mau.cdm"/>
+		<Model Expanded="Yes" ID="{6786C54F-94E4-4E06-8CD7-BDEAD815F526}" Loaded="No" Name="QL_VAYVON_CB" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="file:///C|/Users/pemap/Documents/Zalo Received Files/QLVAYVON_final.cdm"/>
+		<Model Expanded="Yes" ID="{ACF7EB81-0E4D-4825-9E41-08ACF489EC9F}" Loaded="No" Name="QL_KHHT" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="file:///C|/Users/pemap/Documents/Zalo Received Files/QLKHHT_Mau.cdm"/>
 		<Model ID="{8F13C977-8FCB-48D6-BA0D-6DA03DFA04CD}" Loaded="No" Name="Bài 3" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="Bài 3.pdm"/>
 		<Model ID="{58E59B82-68D3-4617-8FCC-56B82201ED4D}" Name="Bài 6" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="Bài 6.cdm"/>
-		<Model Expanded="Yes" ID="{82FC5FDE-8F0B-404C-B4BC-5CFA697F5C90}" Name="Bài 6" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="Bài 6.pdm"/>
+		<Model Expanded="Yes" ID="{82FC5FDE-8F0B-404C-B4BC-5CFA697F5C90}" Loaded="No" Name="Bài 6" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" URL="Bài 6.pdm"/>
 		<Model Expanded="Yes" ID="{CC4B73FA-8800-43D5-BBD2-273EDC8E4E41}" Name="BaiToanUngDung_PTTKHTTT" Type="{FF4B6538-9856-42CF-B9B9-304ED370CEAA}" URL="BaiToanUngDung_PTTKHTTT/BaiToanUngDung_PTTKHTTT.prj"/>
+		<Model Expanded="Yes" ID="{A05385D8-325B-4741-B2A5-823C11DD6D4E}" Name="ConceptualDataModel_1" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="file:///C|/Users/pemap/Documents/Zalo Received Files/ConceptualDataModel_1.cdm"/>
+		<Model Expanded="Yes" ID="{A05385D8-325B-4741-B2A5-823C11DD6D4E}" Name="ConceptualDataModel_1" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="ProjectNhom1.cdm"/>
+		<Model Expanded="Yes" ID="{A05385D8-325B-4741-B2A5-823C11DD6D4E}" Name="ConceptualDataModel_1" Selected="Yes" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="ProjectNhom.cdm"/>
 	</Local>
 	<BrowserModule Name="Repository"/>
 </Workspace>
