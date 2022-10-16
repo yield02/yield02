@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
-
-</head>
-<body>
+  </head>
+  <body>
     <nav id="navbar">
-        <ul class="nav-container">
-            <li class="nav-btn"><a href="#Header">Home</a></li>
-            <li class="nav-btn"><a href="#concent">Concent</a></li>
-            <li class="nav-btn"><a href="#footer">Footer</a></li>
-            <li class="nav-btn"><a href="./trangchu.html">Trang Chủ</a></li>
-            <li class="nav-btn"><a href="./dangnhap.html">Đăng Nhập</a></li>
-            <li class="nav-btn"><a href="./taskjs.html">Tính Tam Giác và Giai thừa</a></li>
-            <li class="nav-btn"><a href="./English.html">English</a></li>
-          </ul>
+      <ul class="nav-container">
+        <li class="nav-btn"><a href="/">Home</a></li>
+        <li class="nav-btn"><a href="#concent">Concent</a></li>
+        <li class="nav-btn"><a href="#footer">Footer</a></li>
+        <li class="nav-btn"><a href="./trangchu.html">Trang Chủ</a></li>
+        <li class="nav-btn"><a href="./dangnhap.html">Đăng Nhập</a></li>
+        <li class="nav-btn">
+          <a href="./taskjs.html">Tính Tam Giác và Giai thừa</a>
+        </li>
+        <li class="nav-btn"><a href="./English.html">English</a></li>
+      </ul>
     </nav>
     <main id="root">
-        <div id="tamgiac">
-            <h2>Tính Tam Giác</h2>
-            <input />
+      <div id="tamgiac">
+        <h2>Tính Tam Giác</h2>
+        <div>
+          <label for="a">Cạnh A</label>
+          <input id="a" name="a" type="number" />
+          <label for="b">Cạnh B</label>
+          <input id="b" name="b" type="number" />
+          <label for="c">Cạnh C</label>
+          <input id="c" name="c" type="number" />
         </div>
+        <div id="result1"></div>
+        <button id="btn1">Kiểm Tra Và Tính Chu Vi Diện Tích</button>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div id="giaithua">
+        <div>
+          <h2>Tính Giai Thừa</h2>
+          <label for="n">Nhập N</label>
+          <input id="n" name="n" type="number" />
+        </div>
+        <div id="result2"></div>
+        <button id="btn2">Tính Giai Thừa</button>
+      </div>
     </main>
-    <script src="./js/taskjs.js" type="module">
-    </script>
-</body>
+    <script src="./js/taskjs.js" type="module"></script>
+  </body>
 </html>
