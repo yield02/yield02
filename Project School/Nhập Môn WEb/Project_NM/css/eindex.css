@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Listeningbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+
+.TimeBox {
+    margin-top: 50px;
+}
+
+#showAudio {
+    width: 80%;
+}
+
+.proces_container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#processbar {
+    width: 50%;
+}
+
+.control_container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.control-btn {
+    background: transparent;
+    border: none;
+    margin: 0 12px;
+    padding: 12px 24px;
+    font-size: 32px;
+    opacity: 0.5;
+}
+
+.control-btn:hover {
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+.control-btn.active {
+    cursor: pointer;
+    opacity: 1;
+
+}
