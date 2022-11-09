@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/masonry.css" />
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -16,9 +29,9 @@
       </nav>
       <hr />
   
-      <main>
+      <main class="px-4 py-5">
         <!-- Ví dụ 1 - 2 - 3 -->
-        <section class="content1">
+        <section class="content1 mt-5">
           <h4>Bảo kính cảnh giới bài 42</h4>
           <p>
             <u> Dưng dưng sự thế biếng đôi tranh, </u>
@@ -45,7 +58,7 @@
           />
         </section>
         <hr />
-        <section>
+        <section class="mt-5">
           <h5>**<u>Một số bài cùng tác giả</u>**</h5>
           <ol>
             <li>Bình ngô đại cáo.</li>
@@ -55,7 +68,7 @@
           </ol>
         </section>
         <hr />
-        <section>
+        <section class="mt-5">
           <table border="1" width="80%">
             <tr>
               <td style="text-align: center" colspan="3">Thời Khóa Biểu</td>
@@ -100,7 +113,7 @@
         <br />
   
         <!-- Ví dụ 4 5 6 -->
-        <section>
+        <section class="mt-5">
           <div>
             <form action="">
               <label for="user">Tài Khoản</label>
@@ -111,14 +124,14 @@
               <input type="password" id="Password" placeholder="Nhập mậu khẩu" />
               <br />
               <br />
-              <input type="submit" value="Đăng nhập" id="" />
+              <input type="submit" class="btn btn-success" value="Đăng nhập" id="" />
             </form>
           </div>
         </section>
         <br />
   
-        <section>
-          <input type="button" onclick="alert('Click me')" value="click me" />
+        <section class="mt-5">
+          <input type="button" class="btn btn-primary" onclick="alert('Click me')" value="click me" />
           <br />
   
           <fieldset>
@@ -134,7 +147,7 @@
           </fieldset>
         </section>
   
-        <section>
+        <section class="mt-5">
           <form>
             1<input type="checkbox" checked name="01"/> <br />
             2<input type="checkbox" name="02"/> <br />
@@ -143,7 +156,7 @@
           </form>
         </section>
   
-        <section>
+        <section class="mt-5">
           <h4>Bạn đã học những ngôn ngữ nào?</h4>
           Java<input type="checkbox" name="Java"/> <br>
           C#<input type="checkbox" name="C#"/> <br>
@@ -151,7 +164,7 @@
           Javascript<input type="checkbox" name="01"/> <br>
         </section>
   
-        <section>
+        <section class="mt-5">
           <form action="">
             <select name="" id="select">
               <option value="HN">Hà Nội</option>

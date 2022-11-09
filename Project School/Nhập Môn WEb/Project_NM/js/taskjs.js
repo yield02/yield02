@@ -69,3 +69,28 @@ btn1.onclick = handdleBtn1;
 btn2.onclick = handdleBtn2;
 
 
+
+
+function chanchiahetchonam(n) {
+    for(var i = 0; i < n; i++) {
+        if(i%5==0 && i % 2 == 0) {
+            console.log(i);
+        }
+    }
+}
+
+
+
+
+
+console.log("Bài 1:");
+chanchiahetchonam(100);
+console.log("Bài 2:");
+var aa = ['A', 'B', 'C', 'D'];
+
+aa.forEach((item) => {
+    if(item === 'C') {
+        console.log(item);
+    }
+})
+
