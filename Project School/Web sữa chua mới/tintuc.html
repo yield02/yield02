@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tin Tức</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <img id="header-img1" src="images/header-img1.png" alt="" />
+            <img id="header-img2" src="images/header-img2.png" alt="" />
+            <img id="header-img3" src="images/header-img3.png" alt="" />
+            <a id="#top" href="trangchu.html"><img src="images/logo.png" alt="" /></a>
+            <nav>
+                <a href="trangchu.html">Trang Chủ</a>
+                <a href="gioithieu.html">Giới Thiệu</a>
+                <a href="sanpham.html">Sản Phẩm</a>
+                <a href="tintuc.html">Tin Tức</a>
+                <a href="dangnhap.html">Đăng Nhập</a>
+                <a href="dangky.html">Đăng Ký</a>
+                <a href="lienhe.html">Liên Hệ</a>
+                <div class="search-container">
+                    <form name="frm-search" method="get" action="timkiem.html">
+                        <div class="input-container">
+                            <input
+                                class="search-input"
+                                type="text"
+                                placeholder="Nhập nội dung cần tìm..."
+                                name="words"
+                                onkeypress="checkKeySearch(event)"
+                            />
+                            <i class="fa fa-search icon-white" onclick="doSearch()"></i>
+                            <i onclick="openCart()" class="fa fa-shopping-cart icon-pink"></i>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <main class="two-cols-left">
+            <article class="main-content" style="margin-left: 12px">
+                <h1>TIN TỨC</h1>
+                <section class="image-right">
+                    <h2>LỘ DIỆN SIÊU NĂNG LỰC TỪ TRÁI XOÀI</h2>
+                    <img class="image-right" src="images/tintuc/news1.jpg" alt="Ảnh trái xoài" width="400px" />
+                    <p>
+                        Xoài là một trong những cây ăn trái chủ lực của đồng bằng sông Cửu Long <br />
+                        (ĐBSCL), cimages/tintucm khoảng 48% tổng diện tích xoài cả nước. Trong đó, tỉnh Đồng <br />
+                        Tháp hiện có diện tích trồng xoài khoảng 12.171ha - lớn nhất vùng ĐBSCL với sản <br />
+                        lượng hàng năm gần 124 ngàn tấn.<span style="color: blue"><u>Xem chi tiết</u></span>
+                    </p>
+                </section>
+                <slection class="image-right">
+                    <h2>SỮA CHUA CÁC LOẠI HẠT-MÓN NGON CHO HỆ MIỄN DỊCH KHỎE</h2>
+                    <img
+                        class="image-right"
+                        src="images/tintuc/news2.jpg"
+                        alt="Ảnh sữa chua các loại hạt"
+                        width="400px"
+                    />
+                    <p>
+                        Các loại sữa hạt càng ngày trở nên quen thuộc với mọi người, bởi hàm lượng dinh <br />
+                        dưỡng cao, và lành tính. Với thị trường sữa hạt đa dạng phong phú, hôm nay chúng <br />
+                        ta cùng điểm qua xem có các loại sữa hạt nào, và loại nào là bổ dưỡng nhất cho sức <br />
+                        khỏe?<span style="color: blue"><u>Xem chi tiết</u></span>
+                    </p>
+                </slection>
+                <div>
+                    <h2>SỮA CHUA KIWI-MÓN QUÀ CHO SỨC KHỎE</h2>
+                    <img class="image-right" src="images/tintuc/news3.jpg" alt="Ảnh sữa chua kiwi" width="400px" />
+                    <p>
+                        Kiwi thành phần dinh dưỡng rất cao so với các loại hoa quả khác. Hàm lượng <br />
+                        vitamin C cao cho hệ miễn dịch khỏe mạnh cùng nguồn chất xơ hỗ trợ hệ tiêu hóa. <br />
+                        Siêu quả Kiwi cho cả nhà siêu khỏe, 100% Vitamin C cần thiết mỗi ngày<span style="color: blue"
+                            ><u>Xem chi tiết</u></span
+                        >
+                    </p>
+                </div>
+                <div>
+                    <h2>
+                        RA MẮT APP SỮA CHUA Freeeze TRÊN NỀN <br />
+                        TẢNG IOS
+                    </h2>
+                    <img class="image-right" src="images/tintuc/news4.jpg" alt="Ảnh app trên ios" width="400px" />
+                    <p>
+                        Nhằm mang đến cho tất cả khách hàng những trải nghiệm thú vị nhất Công ty Sữa <br />
+                        Chua Freeeze giới thiệu app đặt hàng độc đáo, giúp khách hàng mua sắm được mọi <br />
+                        lúc mọi nơi với nhiều tiện ích<span style="color: blue"><u>Xem chi tiết</u></span>
+                    </p>
+                </div>
+                <div>
+                    <h2>ĐĂNG KÝ THÀNH VIÊN-NHẬN NGAY ƯU ĐÃI</h2>
+                    <img class="image-right" src="images/tintuc/news5.jpg" alt="Ảnh đăng ký thành viên" width="400px" />
+                    <p>
+                        Công ty sữa chua hân hạnh mang đến chương trình "Đăng Ký Thành Viên" với nhiều <br />
+                        ưu đãi độc đáo. Member Card – thẻ thành viên nhà Sữa Chua Freeeze dành cho tất cả <br />
+                        khách hàng đăng kí tài khoản và phát sinh đơn hàng.<span style="color: blue"
+                            ><u>Xem chi tiết</u></span
+                        >
+                    </p>
+                </div>
+                <div>
+                    <h2>TUYỂN GIÁM SÁT CHUỖI CỬA HÀNG</h2>
+                    <img class="image-right" src="images/tintuc/news6.jpg" alt="Ảnh minh họa" width="400px" />
+                    <p>
+                        Tuyển Giám Sát chuỗi cửa hàng : – tại khu vực TP Hải Phòng & các tỉnh lân cận – <br />
+                        Số lượng: 01 MÔ TẢ: Giám sát hoạt động kinh doanh các cửa hàng; Kiểm tra lịch <br />
+                        làm việc của các cửa hàng<span style="color: blue"><u>Xem chi tiết</u></span>
+                    </p>
+                </div>
+            </article>
+            <aside class="right-side">
+                <div>
+                    <h1>ĐƯỢC QUAN TÂM</h1>
+                    <img src="images/tintuc/hotnews.jpg" alt="Ảnh minh họa" width="400px" />
+                </div>
+                <div>
+                    <h2>
+                        KHAI TRƯƠNG HÂN HOAN - ƯU ĐÃI NGẬP <br />
+                        TRÀN
+                    </h2>
+                    <p>
+                        Khai trương hân hoan - ưu đãi ngập tràn Thêm 1 ngôi nhà mới của Sữa chua <br />
+                        Freeeze được khai trương<span style="color: blue"><u>Xem chi tiết</u></span>
+                    </p>
+                </div>
+            </aside>
+        </main>
+        <footer>			
+            <p>&copy; 2021 Bản quyền thuộc về FreeezeVN. 
+                <a href="#" class="social-icon"><i class="fa fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fa fa-pinterest"></i></a>
+                <a href="#top"><img  class="gotop" src="./images/top.png"></a></p>
+        </footer>
+    </body>
+</html>

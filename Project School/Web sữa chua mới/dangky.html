@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Đăng Ký</title>
+        <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <img id="header-img1" src="images/header-img1.png" alt="" />
+            <img id="header-img2" src="images/header-img2.png" alt="" />
+            <img id="header-img3" src="images/header-img3.png" alt="" />
+            <a id="#top" href="trangchu.html"><img src="images/logo.png" alt="" /></a>
+            <nav>
+                <a href="trangchu.html">Trang Chủ</a>
+                <a href="gioithieu.html">Giới Thiệu</a>
+                <a href="sanpham.html">Sản Phẩm</a>
+                <a href="tintuc.html">Tin Tức</a>
+                <a href="dangnhap.html">Đăng Nhập</a>
+                <a href="dangky.html">Đăng Ký</a>
+                <a href="lienhe.html">Liên Hệ</a>
+                <div class="search-container">
+                    <form name="frm-search" method="get" action="timkiem.html">
+                        <div class="input-container">
+                            <input
+                                class="search-input"
+                                type="text"
+                                placeholder="Nhập nội dung cần tìm..."
+                                name="words"
+                                onkeypress="checkKeySearch(event)"
+                            />
+                            <i class="fa fa-search icon-white" onclick="doSearch()"></i>
+                            <i onclick="openCart()" class="fa fa-shopping-cart icon-pink"></i>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <form
+                onsubmit="return registerValidate(this);"
+                action="#"
+                method="post"
+                style="max-width: 500px; margin: auto"
+                enctype="multipart/form-data"
+            >
+                <h1>ĐĂNG KÝ</h1>
+                <div class="input-container">
+                    <i class="fa fa-envelope icon-white"></i>
+                    <input class="input-field" type="text" placeholder="Vui lòng nhập email" name="email" />
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-key icon-white"></i>
+                    <input class="input-field" type="password" placeholder="Vui lòng nhập mật khẩu" name="psw" />
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-key icon-white"></i>
+                    <input
+                        class="input-field"
+                        type="password"
+                        placeholder="Vui lòng nhập lại mật khẩu"
+                        name="psw-repeat"
+                    />
+                </div>
+                <div class="input-container">
+                    <i class="fa fa fa-users icon-white"></i>
+                    <input class="input-field" checked type="radio" id="type_silver" name="memberType" value="1" />
+                    <label for="type_silver">Bạc</label>
+                    <input class="input-field" type="radio" id="type_gold" name="memberType" value="1" />
+                    <label for="type_gold">Vàng</label>
+                    <input class="input-field" type="radio" id="type_platinum" name="memberType" value="1" />
+                    <label for="type_platinum">Bạch Kim</label>
+                </div>
+                <div class="input-container">
+                    <i class="fa fa-id-badge icon-white"></i>
+                    <input class="input-field" id="avatar" type="file" name="avatar" />
+                </div>
+                <span
+                    >Thông qua việc tạo tài khoản, bạn đồng ý với<a href="#">
+                        Điều khoản & Quyền riêng tư của chúng tôi</a
+                    >.</span
+                >
+                <button type="submit" class="btn">Đăng Ký</button><button type="reset" class="btn">Hủy</button>
+            </form>
+        </main>
+        <footer>			
+            <p>&copy; 2021 Bản quyền thuộc về FreeezeVN. 
+                <a href="#" class="social-icon"><i class="fa fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fa fa-pinterest"></i></a>
+                <a href="#top"><img  class="gotop" src="./images/top.png"></a></p>
+        </footer>
+        <script src="./filescript.js"></script>
+    </body>
+</html>

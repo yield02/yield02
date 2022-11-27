@@ -1,0 +1,21 @@
+.logo_container {
+    position: relative;
+    display: inline-block;
+}
+
+.y-logo{
+
+}
+
+
+.y-title {
+    position: absolute;
+    text-align: center;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.y-title h6 {
+    margin: 0;
+}
