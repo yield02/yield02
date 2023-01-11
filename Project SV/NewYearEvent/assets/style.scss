@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+
+:root {
+    --backround-color: rgb(246,180,248);
+    --text-color: aliceblue;
+}
+
+#body {
+  background:red;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--backround-color);
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgba(49, 36, 48, 0.7);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(49, 36, 48, 0.9);
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
