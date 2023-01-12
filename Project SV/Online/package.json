@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "watch:scss": "node-sass -w assets/style.scss assets/style.css"
+  },
+  "dependencies": {
+    "jquerykeyframes": "^1.0.8",
+    "node-sass": "^8.0.0"
+  }
+}
