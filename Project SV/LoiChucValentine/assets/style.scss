@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box;
+
+}
+
+
+
+
+:root {
+
+ 
+}
+
+body {
+  background: rgba(49, 36, 48, 0.7);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+
+}
+  #valentine {
+    width: 1500px;
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+    }
+    #text {
+      position: absolute;
+      z-index: 10;
+      font-size: 20px;
+      font-weight: 600;
+      border: none;
+      top: 54%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background: transparent;
+      &:focus {
+        outline: none;
+      }
+    }
+    #textmessage{
+      z-index: 11;
+      color: red;
+      font-weight: 600;
+      font-size: 14px;
+      position: absolute;
+      top: 61%;
+    left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+    .submitBtn {
+      cursor: pointer;
+      position: absolute;
+      width: 100px;
+      height: 70px;
+      top: 66%;
+      left: 64%;
+      transform: translate(-50%, -50%);
+      z-index: 11;
+      border: none;
+      background: url(./img/nutsend1.png);
+      background-size: 98.7px 70px;
+      color: #ffff;
+      font-weight: 800;
+      font-size: 20px;
+      padding-top: 4px;
+      opacity: 0.8;
+      &:hover {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.05);
+      }
+    }
+
+  }

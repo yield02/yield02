@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+}
+
+body {
+  background: rgba(49, 36, 48, 0.7);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+    .bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 5%;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+      text-align: center;
+
+      .image_container {
+        position: relative;
+        display: inline-block;
+        .bg-image {
+          max-width: 1000px;
+          height: 120px;
+        }
+        .heart1 {
+          position: absolute;
+          top: 12%;
+          left: 6%;
+          width: 20px;
+          animation: heart1 0.75s ease infinite;
+        }
+        .heart2 {
+          position: absolute;
+          top: 0%;
+          left: 7.5%;
+          width: 20px;
+          animation: heart2 0.75s ease infinite;
+        }
+        .heart3 {
+          position: absolute;
+          top: 15%;
+          left: 8%;
+          width: 20px;
+          animation: heart3 0.75s ease infinite;
+        }
+        .heart5 {
+          position: absolute;
+          top: 12%;
+          left: 97%;
+          width: 20px;
+          animation: heart5 0.75s ease infinite;
+
+        }
+        .heart6 {
+          position: absolute;
+          top: 0%;
+          left: 98.5%;
+          width: 20px;
+          animation: heart6 0.75s ease infinite;
+
+
+        }
+        .heart7 {
+          position: absolute;
+          top: 15%;
+          left: 99%;
+          width: 20px;
+          animation: heart7 0.75s ease infinite;
+
+        }
+
+
+        @keyframes heart1 {
+          
+          form {
+            top: 12%;
+            left: 6%;
+            opacity: 1;
+          }
+          
+          to {
+            top: 5%;
+            left: 7%;
+            opacity: 0;
+          }
+        }
+
+        @keyframes heart2 {
+          
+          form {
+            top: 0%;
+            left: 7.5%;
+            opacity: 1;
+          }
+          
+          to {
+            top: -7%;
+            left: 8.5%;
+            opacity: 0;
+          }
+        }
+
+        @keyframes heart3 {
+          
+          form {
+            top: 15%;
+            left: 8%;
+            opacity: 1;
+          }
+          
+          to {
+            top: 8%;
+            left: 9%;
+            opacity: 0;
+          }
+        }
+
+        @keyframes heart5 {
+          
+          form {
+            top: 12%;
+            left: 98%;
+            opacity: 1;
+          }
+          
+          to {
+            top: 5%;
+            left: 99%;
+            opacity: 0;
+          }
+        }
+
+        @keyframes heart6 {
+          
+          form {
+            top: 0%;
+            left: 98.5%;
+            opacity: 1;
+          }
+          
+          to {
+            top: -7%;
+            left: 100.5%;
+            opacity: 0;
+          }
+        }
+
+        @keyframes heart7 {
+          
+          form {
+            top: 15%;
+            left: 99%;
+            opacity: 1;
+          }
+          
+          to {
+            top: 8%;
+            left: 101%;
+            opacity: 0;
+          }
+        }
+
+      }
+      
+    
+  }
+
+  .wrapper {
+    position: absolute;
+    max-width: 600px;
+    overflow: hidden;
+    width: 80%;
+    top: 4.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    div {
+      font-weight: 700;
+      display: inline-block;
+      animation: slideText 10s linear infinite;
+      white-space: nowrap;
+
+      #text {
+        color: white;
+        display: inline-block;
+        white-space: nowrap;
+      }
+
+      #text:nth-child(1) {
+        color: white;
+        display: inline-block;
+        white-space: nowrap;
+        margin-right: 45%;
+      }
+    }
+
+    @keyframes slideText {
+      form {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-95%);
+      }
+    }
+  }
+
