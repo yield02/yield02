@@ -18,16 +18,28 @@ th {text-align: left;}
 <body>
 
 <?php
-$q = intval($_GET['q']);
+$q = $_REQUEST['q'];
 
-$con = mysqli_connect('localhost','peter','abc123');
-if (!$con) {
+print_r($q);
+
+$servername = 'localhost';
+$username = 'Yield';
+$password = '3760995aA';
+
+
+$conn = mysqli_connect($servername, $username, $password);
+if (!$conn) {
   die('Could not connect: ' . mysqli_error($con));
 }
 
-mysqli_select_db($con,"ajax_demo");
-$sql="SELECT * FROM user WHERE id = '".$q."'";
-$result = mysqli_query($con,$sql);
+mysqli_select_db($conn, 'test');
+
+$sql = "SELECT * FROM usertest where Pid = '" .$q."'";
+
+
+
+$result = mysqli_query($conn, $sql);
+
 
 echo "<table>
 <tr>
@@ -37,17 +49,19 @@ echo "<table>
 <th>Hometown</th>
 <th>Job</th>
 </tr>";
-while($row = mysqli_fetch_array($result)) {
+
+$row = mysqli_fetch_array($result);
   echo "<tr>";
-  echo "<td>" . $row['FirstName'] . "</td>";
+  echo "<td>" . $row['Firstname'] . "</td>";
   echo "<td>" . $row['LastName'] . "</td>";
   echo "<td>" . $row['Age'] . "</td>";
   echo "<td>" . $row['Hometown'] . "</td>";
   echo "<td>" . $row['Job'] . "</td>";
   echo "</tr>";
-}
 echo "</table>";
-mysqli_close($con);
+
+
+mysqli_close($conn);
 ?>
 </body>
 </html>
