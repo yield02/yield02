@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-05T04:24:54.612Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57" etag="l2h2vlVLYEOjG3omG09T" version="21.0.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-03-05T04:25:11.388Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57" etag="V6sqjh10poGHucVhZ3rT" version="21.0.2" type="github" pages="2">
   <diagram name="Stack" id="dG-EW_NjcqGvvalpMA4f">
-    <mxGraphModel dx="6800" dy="6618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="4700" dy="5456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -148,10 +148,16 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Z6RMqO0SwZaBrjJc8u5S" name="Queu">
-    <mxGraphModel dx="1050" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="6300" dy="6341" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="IWhF3KaInKaJhHAjJOew-1" value="&lt;h1&gt;Trạng thái cuối&lt;/h1&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;(8, X, Y), DK X+Y = 8&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Max X&amp;nbsp; = 7, Max Y = 3&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="-30" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="0CoYkJkfnXaRcMCr3eDk-1" value="&lt;h1&gt;Hành động&lt;/h1&gt;&lt;div&gt;1. A--&amp;gt;B&lt;/div&gt;&lt;div&gt;2.A--&amp;gt;C&lt;/div&gt;&lt;div&gt;3.B--&amp;gt;C&lt;/div&gt;&lt;div&gt;4.B--&amp;gt;A&lt;/div&gt;&lt;div&gt;5.C--&amp;gt;A&lt;/div&gt;&lt;div&gt;6 C--&amp;gt;B&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="-30" width="190" height="180" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
