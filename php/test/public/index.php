@@ -1,10 +1,15 @@
 <?php
-header('Access-Control-Allow-Origin: *');
-header('Content-type: application/json');
 
-include '../partials/db_connect.php';
+require __DIR__ . '/../vendor/autoload.php';
 
-echo json_encode("test ne");
+$router = new \Bramus\Router\Router();
 
+$router->get('/', function() {
+    echo 'Home Page';
+});
 
-?>
+$router->get('/about', function() {
+    echo 'About Page Contents';
+});
+
+$router->run();
